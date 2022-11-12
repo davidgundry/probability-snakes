@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "typescript",
+			"tsconfig": "tsconfig.json",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "tsc: build - tsconfig.json"
+		},
+		{
+            "label": "create gif",
+            "type": "shell",
+            "command": "convert -delay 30 -loop 0 output/d6/*.png animation.gif",
+            "problemMatcher": []
+        }
+	]
+}

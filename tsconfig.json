@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": false,
+      "module": "commonjs",
+      "target": "es6",
+      "allowJs": true,
+      "sourceMap": true,
+      "baseUrl": "src",
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "types": ["node"],
+      "typeRoots": ["./types", "./node_modules/@types"],
+      "moduleResolution": "node",
+      "esModuleInterop": true
+    },
+    "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
+    "include": ["./src/**/*.tsx", "./src/**/*.ts"]
+}
